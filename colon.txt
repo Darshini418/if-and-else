@@ -1,0 +1,17 @@
+$ vi colon.sh
+$ cat colon.sh
+#!/bin/sh
+if grep unix myself
+then
+:
+else
+echo "sorry,unix was not found"
+fi
+$ chmod u+x colon.sh
+$ ./colon.sh
+grep: myself: No such file or directory
+sorry,unix was not found
+$ 
+
+
+
